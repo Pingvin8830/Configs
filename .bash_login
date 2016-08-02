@@ -1,9 +1,0 @@
-#clear
-echo -n "Привет, "
-tput setaf 2
-echo "${USER}!"
-tput sgr0
-echo -n "Сегодня: "
-tput setaf 2
-echo "`date +%d.%m.%Y` `date +%H:%M:%S`"
-tput sgr0
