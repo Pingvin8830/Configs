@@ -4,6 +4,7 @@ alias cdm='cd /mnt; pwd'
 alias cdd='cd /data; pwd'
 alias cds='cd /data/shells; pwd'
 alias cdh='cd /data/home-bb; pwd'
+alias cdg='cd /data/git; pwd'
 
 #-Aliases for sudo----------------------------------------------------------------------------------------------------------------------------------------------------------------
 alias sudo='/usr/bin/sudo'
@@ -41,4 +42,3 @@ alias anton='ssh anton@AntonStacionPC'
 alias ksusha='ssh ksusha@KsushaNotebook'
 alias victor='ssh victor@VictorStacionPC'
 alias feh='feh -r -F'
-alias mysql='mysql -t'
