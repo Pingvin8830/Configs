@@ -1,0 +1,49 @@
+colorscheme ron
+set nowrap          " Отключение переноса строк
+set number          " Включение нумерации строк
+sy on               " Включение подсветки синтаксиса
+" colorsheme        " Цветовая схема
+set fileformat=unix " Тип переносов строк
+set tabstop=2       " Размер табуляции
+set ic              " Игнорировать регистр при поиске
+" set spell           " Проверка орфографии
+set is              " Инкрементальный поиск
+
+" Сохранение по F2 в командном режиме
+imap <F2> <Esc>:w<CR> 
+" Сохранение по F2 в режиме ВСТАВКА
+map <F2> <Esc>:w<CR>
+
+" Выход по F10 в командном режиме
+"imap <F10> <Esc>:q<CR>
+" Выход по F10 в режиме ВСТАВКА
+"map <F10> <Esc>:q<CR>
+
+set wildmenu
+set wcm=<Tab>
+
+menu Main.Save	:w<CR>
+menu Main.Help	:!/bin/less 'command.vim'<CR>
+
+menu Tab.New	:tabnew<CR>
+menu Tab.Prev	:tabprev<CR>
+menu Tab.Next	:tabnext<CR>
+
+menu Exec.Bash		:!/bin/bash % <CR>
+menu Exec.Python	:!/bin/python % <CR>
+menu Exec.Cancel	:<CR>
+
+menu Encoding.koi8-r	:e ++enc=koi8-r<CR>
+menu Encoding.cp1251	:e ++enc=cp1251<CR>
+menu Encoding.cp866	:e ++enc=cp866<CR>
+menu Encoding.ucs-2le	:e ++enc=ucs-2le<CR>
+menu Encoding.utf-8	:e ++enc=utf-8<CR>
+menu Encoding.utf-16	:e ++enc=utf-16<CR>
+
+menu Exit.Save_And_Exit				:x<CR>
+menu Exit.Exit_Without_Save		:q!<CR>
+
+map <F1>	<ESC>:emenu Main.<Tab>
+map <F10>	<ESC>:emenu Exit.<Tab>
+imap <F1>	<ESC>:emenu Main.<Tab>
+imap <F10>	<ESC>:emenu Exit.<Tab>
