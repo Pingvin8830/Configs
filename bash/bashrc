@@ -10,13 +10,20 @@ setleds -D +num
 RED="\033[31m"
 WHITE="\033[0m"
 YELLOW="\033[33m"
+GREEN="\033[32m"
 
 alias ls='ls --color=auto'
 
-if [ "$USER" = 'root' ] ; then
-	PS1="[${RED}\u${WHITE}@${RED}\h${WHITE} \W]# "
+if [ "$HOSTNAME" = 'HomeServer' ] ; then
+	PS1="${RED}\h${WHITE} \W]"
 else
-	PS1="[${YELLOW}\u${WHITE}@${RED}\h${WHITE} \W]\$ "
+	PS1="${GREEN}\h${WHITE} \W]"
+fi
+
+if [ "$USER" = 'root' ] ; then
+	PS1="[${RED}\u${WHITE}@${PS1}# "
+else
+	PS1="[${YELLOW}\u${WHITE}@${PS1}\$ "
 fi
 
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
