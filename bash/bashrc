@@ -7,8 +7,17 @@
 
 setleds -D +num
 
+RED="\033[31m"
+WHITE="\033[0m"
+YELLOW="\033[33m"
+
 alias ls='ls --color=auto'
-PS1='[\033[33m\u\033[0m@\033[31m\h\033[0m \W]\$ '
+
+if [ "$USER" = 'root' ] ; then
+	PS1="[${RED}\u${WHITE}@${RED}\h${WHITE} \W]# "
+else
+	PS1="[${YELLOW}\u${WHITE}@${RED}\h${WHITE} \W]\$ "
+fi
 
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
 [ -f ~/.bash_functions ] && . ~/.bash_functions
