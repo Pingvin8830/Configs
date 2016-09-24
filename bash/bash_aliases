@@ -37,7 +37,7 @@ alias sysdis='sudo systemctl disable'
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 alias kf='killall firefox'
-alias server='ssh AntonHomeServer'
+alias server='ssh HomeServer'
 alias anton='ssh anton@AntonStacionPC'
 alias ksusha='ssh ksusha@KsushaNotebook'
 alias victor='ssh victor@VictorStacionPC'
