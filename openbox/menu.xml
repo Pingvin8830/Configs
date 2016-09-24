@@ -64,6 +64,11 @@
 				<execute>openttd</execute>
 			</action>
 		</item>
+		<item label="Военно-стратегическое">
+			<action name="Execute">
+				<execute>warzone2100</execute>
+			</action>
+		</item>
 	</menu>
 	<menu id="root-menu" label="Openbox 3">
 		<menu id="file_menu"/>
