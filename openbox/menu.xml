@@ -40,6 +40,11 @@
 				<execute>/data/shells/python/my_progs/net_power.py</execute>
 			</action>
 		</item>
+		<item label="Управление сетевыми адаптерами">
+			<action name="Execute">
+				<execute>/data/shells/python/my_progs/switch_netcard.py</execute>
+			</action>
+		</item>
 		<item label="Терминал">
 			<action name="Execute">
 				<execute>guake</execute>
