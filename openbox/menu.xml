@@ -54,7 +54,7 @@
 	<menu id="net_menu" label="Сетевые утилиты">
 		<item icon="/data/graph/icons/firefox.png" label="Браузер">
 			<action name="Execute">
-				<command>firefox</command>
+				<command>/data/git/PDD/PDD/firefox.sh</command>
 			</action>
 		</item>
 	</menu>
