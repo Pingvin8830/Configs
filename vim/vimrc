@@ -4,7 +4,10 @@ set number          " Включение нумерации строк
 sy on               " Включение подсветки синтаксиса
 " colorsheme        " Цветовая схема
 set fileformat=unix " Тип переносов строк
-set tabstop=2       " Размер табуляции
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2    " Размер табуляции
+set expandtab
 set ic              " Игнорировать регистр при поиске
 " set spell           " Проверка орфографии
 set is              " Инкрементальный поиск
