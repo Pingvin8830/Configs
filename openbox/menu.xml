@@ -59,6 +59,11 @@
 		</item>
 	</menu>
 	<menu id="game_menu" label="Игры">
+		<item label="Стим">
+			<action name="Execute">
+				<execute>steam</execute>
+			</action>
+		</item>
 		<item label="Карты">
 			<action name="Execute">
 				<execute>kpat</execute>
