@@ -37,10 +37,19 @@ alias sysstop='sudo systemctl stop'
 alias sysen='sudo systemctl enable'
 alias sysdis='sudo systemctl disable'
 
+#-Aliases for ssh-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+alias server='ssh HomeServer'
+alias anton='ssh AntonStacionPC'
+alias ksusha='ssh KsushaNotebook'
+
+#-Aliases for git-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+alias ga='git add'
+alias gs='git status'
+alias gr='git remote show origin'
+alias gc='git commit -m'
+alias gps='git push'
+alias gpl='git pull'
+
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 alias kf='killall firefox'
-alias server='ssh HomeServer'
-alias anton='ssh anton@AntonStacionPC'
-alias ksusha='ssh ksusha@KsushaNotebook'
-alias victor='ssh victor@VictorStacionPC'
 alias feh='feh -r -F'
