@@ -44,6 +44,7 @@ alias ksusha='ssh KsushaNotebook'
 
 #-Aliases for git-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 alias ga='git add'
+alias gb='git branch'
 alias gc='git commit -m'
 alias gd='git difftool'
 alias gr='git remote show origin'
