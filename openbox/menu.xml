@@ -50,6 +50,11 @@
 				<execute>guake</execute>
 			</action>
 		</item>
+		<item label="Arduino">
+			<action name="Execute">
+				<execute>arduino</execute>
+			</action>
+		</item>
 	</menu>
 	<menu id="net_menu" label="Сетевые утилиты">
 		<item icon="/data/graph/icons/firefox.png" label="Браузер">
