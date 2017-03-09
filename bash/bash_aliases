@@ -59,3 +59,4 @@ alias gpl='git pull'
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 alias kf='killall firefox'
 alias feh='feh -r -F'
+alias restart='cd /srv/http/VNSR/VNSR; git pull; systemctl status httpd; sudo systemctl stop httpd; systemctl status httpd; sudo systemctl start httpd; systemctl status httpd; cd -'
