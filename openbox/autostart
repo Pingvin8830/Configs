@@ -23,3 +23,4 @@ setxkbmap -layout "us,ru" -option "grp:ctrl_shift_toggle,grp_led:scroll" &
 feh --bg-scale --recursive --randomize /data/graph/backgrounds &
 tint2 &
 volumeicon &
+/data/git/Python/progs/reglament_talk.py &
