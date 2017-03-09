@@ -50,11 +50,21 @@
 				<execute>guake</execute>
 			</action>
 		</item>
+		<item label="Arduino">
+			<action name="Execute">
+				<execute>arduino</execute>
+			</action>
+		</item>
 	</menu>
 	<menu id="net_menu" label="Сетевые утилиты">
 		<item icon="/data/graph/icons/firefox.png" label="Браузер">
 			<action name="Execute">
 				<command>firefox</command>
+			</action>
+		</item>
+		<item label="Подключалка">
+			<action name="Execute">
+				<execute>vinagre</execute>
 			</action>
 		</item>
 	</menu>
@@ -80,22 +90,9 @@
 			</action>
 		</item>
 	</menu>
-	<menu id="develop_menu" label="Разработка">
-		<item label="Платы">
-			<action name="Execute">
-				<execute>wine &quot;/data/shells/Sprint Layout/Orig/SprintLayoutRadiGID/SprintLayout/layout60.exe&quot;</execute>
-			</action>
-		</item>
-		<item label="Arduino">
-			<action name="Execute">
-				<execute>arduino</execute>
-			</action>
-		</item>
-	</menu>
 	<menu id="root-menu" label="Openbox 3">
 		<menu id="file_menu"/>
 		<menu id="net_menu"/>
-		<menu id="develop_menu"/>
 		<menu id="graph_menu"/>
 		<menu id="game_menu"/>
 		<separator/>
