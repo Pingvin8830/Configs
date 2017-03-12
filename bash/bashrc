@@ -26,6 +26,9 @@ else
 	PS1="[${YELLOW}\u${WHITE}@${PS1}\$ "
 fi
 
+EDITOR=vim
+PATH="${PATH}:/data/git/Python/progs"
+
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
 [ -f ~/.bash_functions ] && . ~/.bash_functions
 [ -f ~/.bash_login ] && . ~/.bash_login
