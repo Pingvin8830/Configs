@@ -33,6 +33,6 @@ PATH="${PATH}:/data/git/Python/progs"
 [ -f ~/.bash_functions ] && . ~/.bash_functions
 [ -f ~/.bash_login ] && . ~/.bash_login
 
-/data/shells/bash/prog/reglament.sh
+#/data/shells/bash/prog/reglament.sh
 
 complete -cf sudo
