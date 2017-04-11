@@ -5,6 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export EDITOR=vim
+
 setleds -D +num
 
 RED="\033[31m"
@@ -26,7 +28,6 @@ else
 	PS1="[${YELLOW}\u${WHITE}@${PS1}\$ "
 fi
 
-EDITOR=vim
 PATH="${PATH}:/data/git/Python/progs"
 
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
