@@ -16,6 +16,7 @@
 #
 #xfce-mcs-manager &
 
+[ "${HOSTNAME}" = 'AntonStacionPC' ] && /data/git/shells/bash/prog/xrandr.sh 
 xset s off -dpms &
 guake &
 numlockx &
