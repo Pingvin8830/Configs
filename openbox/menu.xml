@@ -7,13 +7,6 @@
 			</action>
 		</item>
 	</menu>
-	<menu id="graph_menu" label="Графика">
-		<item label="Векторный редактор">
-			<action name="Execute">
-				<execute>inkscape</execute>
-			</action>
-		</item>
-	</menu>
 	<menu id="ob_menu" label="Рабочее окружение">
 		<item label="Общие настройки">
 			<action name="Execute">
@@ -62,9 +55,9 @@
 				<command>firefox</command>
 			</action>
 		</item>
-		<item label="Подключалка">
+		<item label="Звонилка">
 			<action name="Execute">
-				<execute>vinagre</execute>
+				<execute>skype</execute>
 			</action>
 		</item>
 	</menu>
@@ -93,7 +86,6 @@
 	<menu id="root-menu" label="Openbox 3">
 		<menu id="file_menu"/>
 		<menu id="net_menu"/>
-		<menu id="graph_menu"/>
 		<menu id="game_menu"/>
 		<separator/>
 		<menu id="sys_menu"/>
