@@ -23,6 +23,11 @@
         <execute>galculator</execute>
       </action>
     </item>
+    <item label="Текстовый процессор">
+      <action name="Execute">
+        <execute>gedit</execute>
+      </action>
+    </item>
   </menu>
 	<menu id="ob_menu" label="Рабочее окружение">
 		<item label="Общие настройки">
