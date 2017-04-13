@@ -5,7 +5,8 @@ alias cdd='cd /data; pwd'
 alias cds='cd /data/shells; pwd'
 alias cdh='cd /data/home-bb; pwd'
 alias cdg='cd /data/git; pwd'
-alias cdv='cd /srv/http/VNSR/VNSR'
+alias cdv='cd /srv/http/VNSR/VNSR; pwd'
+alias cdb='cd /backups; pwd'
 
 #-Aliases for sudo----------------------------------------------------------------------------------------------------------------------------------------------------------------
 alias sudo='/usr/bin/sudo'
