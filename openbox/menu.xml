@@ -6,7 +6,24 @@
 				<execute>thunar</execute>
 			</action>
 		</item>
+    <item label="Музыка">
+      <action name="Execute">
+        <execute>deadbeef</execute>
+      </action>
+    </item>
+    <item label="pdf-показывалка">
+      <action name="Execute">
+        <execute>evince</execute>
+      </action>
+    </item>
 	</menu>
+  <menu id="math_menu" label="Расчеты и документы">
+    <item label="Калькулятор">
+      <action name="Execute">
+        <execute>galculator</execute>
+      </action>
+    </item>
+  </menu>
 	<menu id="ob_menu" label="Рабочее окружение">
 		<item label="Общие настройки">
 			<action name="Execute">
@@ -26,6 +43,17 @@
 		<item label="Перечитать настройки">
 			<action name="Reconfigure"/>
 		</item>
+    <separator/>
+    <item label="Настройка уведомлений">
+      <action name="Execute">
+        <execute>sfce4-notifyd-config</execute>
+      </action>
+    </item>
+    <item label="Настройка экрана приветствия">
+      <action name="Execute">
+        <execute>lightdm-gtk-greeter-settings</execute>
+      </action>
+    </item>
 	</menu>
 	<menu id="sys_menu" label="Системные утилиты">
 		<item label="Управление домашней сетью">
@@ -86,6 +114,7 @@
 	<menu id="root-menu" label="Openbox 3">
 		<menu id="file_menu"/>
 		<menu id="net_menu"/>
+    <menu id="math_menu"/>
 		<menu id="game_menu"/>
 		<separator/>
 		<menu id="sys_menu"/>
