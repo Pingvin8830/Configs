@@ -6,6 +6,11 @@
 				<execute>thunar</execute>
 			</action>
 		</item>
+    <item label="Изображения">
+      <action name="Execute">
+        <execute>viewnior</execute>
+      </action>
+    </item>
     <item label="Музыка">
       <action name="Execute">
         <execute>deadbeef</execute>
