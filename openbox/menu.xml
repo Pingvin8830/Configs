@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
-	<menu id="file_menu" label="Работа с файлами">
-		<item icon="/data/graph/icons/file.png" label="Файловый менеджер">
-			<action name="Execute">
-				<execute>thunar</execute>
-			</action>
-		</item>
-    <item label="Изображения">
+  <menu id="file_menu" label="Работа с файлами">
+    <item icon="/data/graph/icons/file.png" label="Файловый менеджер">
       <action name="Execute">
-        <execute>viewnior</execute>
+        <execute>thunar</execute>
       </action>
     </item>
+    <menu id="graph_menu" label="Изображения">
+      <item label="Просмотр">
+        <action name="Execute">
+          <command>viewnior</command>
+        </action>
+      </item>
+      <item label="Растровое редактирование">
+        <action name="Execute">
+          <command>gimp</command>
+        </action>
+      </item>
+    </menu>
     <item label="Музыка">
       <action name="Execute">
         <execute>deadbeef</execute>
@@ -21,7 +28,7 @@
         <execute>evince</execute>
       </action>
     </item>
-	</menu>
+  </menu>
   <menu id="math_menu" label="Расчеты и документы">
     <item label="Калькулятор">
       <action name="Execute">
@@ -34,25 +41,25 @@
       </action>
     </item>
   </menu>
-	<menu id="ob_menu" label="Рабочее окружение">
-		<item label="Общие настройки">
-			<action name="Execute">
-				<execute>obconf</execute>
-			</action>
-		</item>
-		<item label="Горячие клавиши">
-			<action name="Execute">
-				<execute>obkey</execute>
-			</action>
-		</item>
-		<item label="Настройка меню">
-			<action name="Execute">
-				<execute>obmenu</execute>
-			</action>
-		</item>
-		<item label="Перечитать настройки">
-			<action name="Reconfigure"/>
-		</item>
+  <menu id="ob_menu" label="Рабочее окружение">
+    <item label="Общие настройки">
+      <action name="Execute">
+        <execute>obconf</execute>
+      </action>
+    </item>
+    <item label="Горячие клавиши">
+      <action name="Execute">
+        <execute>obkey</execute>
+      </action>
+    </item>
+    <item label="Настройка меню">
+      <action name="Execute">
+        <execute>obmenu</execute>
+      </action>
+    </item>
+    <item label="Перечитать настройки">
+      <action name="Reconfigure"/>
+    </item>
     <separator/>
     <item label="Настройка уведомлений">
       <action name="Execute">
@@ -64,76 +71,76 @@
         <execute>lightdm-gtk-greeter-settings</execute>
       </action>
     </item>
-	</menu>
-	<menu id="sys_menu" label="Системные утилиты">
-		<item label="Управление домашней сетью">
-			<action name="Execute">
-				<execute>/data/shells/python/my_progs/net_power.py</execute>
-			</action>
-		</item>
-		<item label="Управление сетевыми адаптерами">
-			<action name="Execute">
-				<execute>/data/shells/python/my_progs/switch_netcard.py</execute>
-			</action>
-		</item>
-		<item label="Терминал">
-			<action name="Execute">
-				<execute>guake</execute>
-			</action>
-		</item>
-		<item label="Arduino">
-			<action name="Execute">
-				<execute>arduino</execute>
-			</action>
-		</item>
-	</menu>
-	<menu id="net_menu" label="Сетевые утилиты">
-		<item icon="/data/graph/icons/firefox.png" label="Браузер">
-			<action name="Execute">
-				<command>firefox</command>
-			</action>
-		</item>
-		<item label="Звонилка">
-			<action name="Execute">
-				<execute>apulse32 skype</execute>
-			</action>
-		</item>
-	</menu>
-	<menu id="game_menu" label="Игры">
-		<item label="Стим">
-			<action name="Execute">
-				<execute>steam</execute>
-			</action>
-		</item>
-		<item label="Карты">
-			<action name="Execute">
-				<execute>kpat</execute>
-			</action>
-		</item>
-		<item label="Трансортно-экономическое">
-			<action name="Execute">
-				<execute>openttd</execute>
-			</action>
-		</item>
-		<item label="Военно-стратегическое">
-			<action name="Execute">
-				<execute>warzone2100</execute>
-			</action>
-		</item>
-	</menu>
-	<menu id="root-menu" label="Openbox 3">
-		<menu id="file_menu"/>
-		<menu id="net_menu"/>
+  </menu>
+  <menu id="sys_menu" label="Системные утилиты">
+    <item label="Управление домашней сетью">
+      <action name="Execute">
+        <execute>/data/shells/python/my_progs/net_power.py</execute>
+      </action>
+    </item>
+    <item label="Управление сетевыми адаптерами">
+      <action name="Execute">
+        <execute>/data/shells/python/my_progs/switch_netcard.py</execute>
+      </action>
+    </item>
+    <item label="Терминал">
+      <action name="Execute">
+        <execute>guake</execute>
+      </action>
+    </item>
+    <item label="Arduino">
+      <action name="Execute">
+        <execute>arduino</execute>
+      </action>
+    </item>
+  </menu>
+  <menu id="net_menu" label="Сетевые утилиты">
+    <item icon="/data/graph/icons/firefox.png" label="Браузер">
+      <action name="Execute">
+        <command>firefox</command>
+      </action>
+    </item>
+    <item label="Звонилка">
+      <action name="Execute">
+        <execute>apulse32 skype</execute>
+      </action>
+    </item>
+  </menu>
+  <menu id="game_menu" label="Игры">
+    <item label="Стим">
+      <action name="Execute">
+        <execute>steam</execute>
+      </action>
+    </item>
+    <item label="Карты">
+      <action name="Execute">
+        <execute>kpat</execute>
+      </action>
+    </item>
+    <item label="Трансортно-экономическое">
+      <action name="Execute">
+        <execute>openttd</execute>
+      </action>
+    </item>
+    <item label="Военно-стратегическое">
+      <action name="Execute">
+        <execute>warzone2100</execute>
+      </action>
+    </item>
+  </menu>
+  <menu id="root-menu" label="Openbox 3">
+    <menu id="file_menu"/>
+    <menu id="net_menu"/>
     <menu id="math_menu"/>
-		<menu id="game_menu"/>
-		<separator/>
-		<menu id="sys_menu"/>
-		<menu id="ob_menu"/>
-		<separator/>
-		<item label="Завершение работы">
-			<action name="Execute">
-				<execute>oblogout</execute>
-			</action>
-		</item>
-	</menu>
+    <menu id="game_menu"/>
+    <separator/>
+    <menu id="sys_menu"/>
+    <menu id="ob_menu"/>
+    <separator/>
+    <item label="Завершение работы">
+      <action name="Execute">
+        <execute>oblogout</execute>
+      </action>
+    </item>
+  </menu>
 </openbox_menu>
