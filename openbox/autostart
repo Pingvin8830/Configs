@@ -16,7 +16,7 @@
 #
 #xfce-mcs-manager &
 
-[ "${HOSTNAME}" = 'AntonStacionPC' ] && /data/git/shells/bash/prog/xrandr.sh 
+[ "${HOSTNAME}" = 'AntonStacionPC' ] && /data/git/shells/bash/prog/xrandr.sh
 xset s off -dpms &
 guake &
 numlockx &
@@ -25,3 +25,4 @@ feh --bg-scale --recursive --randomize /data/graph/backgrounds &
 tint2 &
 volumeicon &
 /data/git/Python/progs/reglament_talk.py &
+/data/git/Python/progs/temperature.py &
