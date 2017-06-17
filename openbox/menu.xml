@@ -18,6 +18,18 @@
         </action>
       </item>
     </menu>
+    <menu id="video_menu" label="Видео">
+      <item label="Просмотр">
+        <action name="Execute">
+          <command>vlc</command>
+        </action>
+      </item>
+      <item label="Редактирование">
+        <action name="Execute">
+          <command>kdenlive</command>
+        </action>
+      </item>
+    </menu>
     <item label="Музыка">
       <action name="Execute">
         <execute>deadbeef</execute>
