@@ -114,7 +114,7 @@
     </item>
     <item label="Звонилка">
       <action name="Execute">
-        <execute>apulse32 skype</execute>
+        <execute>skype</execute>
       </action>
     </item>
   </menu>
