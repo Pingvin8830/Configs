@@ -57,6 +57,11 @@ alias gs='git status'
 alias gps='git push'
 alias gpl='git pull'
 
+#-Aliases for django--------------------------------------------------------------------------------------------------------------------------------------------------------------
+alias mkm='python manage.py makemigrations'
+alias pmm='python manage.py migrate'
+alias pmmd='python manage.py migrate --database'
+
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 alias kf='killall firefox'
 alias feh='feh -r -F'
