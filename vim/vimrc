@@ -1,16 +1,20 @@
 colorscheme ron
-set nowrap          " Отключение переноса строк
-set number          " Включение нумерации строк
-sy on               " Включение подсветки синтаксиса
-" colorsheme        " Цветовая схема
-set fileformat=unix " Тип переносов строк
+set nowrap                        " Отключение переноса строк
+set number                        " Включение нумерации строк
+sy on                             " Включение подсветки синтаксиса
+set fileformat=unix               " Тип переносов строк
 set tabstop=2
 set softtabstop=2
-set shiftwidth=2    " Размер табуляции
+set shiftwidth=2                  " Размер табуляции
 set expandtab
-set ic              " Игнорировать регистр при поиске
-" set spell           " Проверка орфографии
-set is              " Инкрементальный поиск
+set ic                            " Игнорировать регистр при поиске
+" set spell                       " Проверка орфографии
+set is                            " Инкрементальный поиск
+
+set foldenable                    " Включение вкладок
+set foldmethod=manual             " Ручной режим установки вкладок
+au BufWritePost * mkview          " Сохранение вкладок при закрытии файла
+au BufReadPost * silent loadview  " Загрузка складок при открытии файла
 
 " Сохранение по F2 в командном режиме
 imap <F2> <Esc>:w<CR> 
