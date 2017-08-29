@@ -28,7 +28,7 @@ else
 	PS1="[${YELLOW}\u${WHITE}@${PS1}\$ "
 fi
 
-PATH="${PATH}:/data/git/Python/progs"
+PATH="${PATH}:/data/git/Python/progs:/data/git/shells/bash/prog"
 
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
 [ -f ~/.bash_functions ] && . ~/.bash_functions
