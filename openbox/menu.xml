@@ -54,6 +54,11 @@
 		</item>
 	</menu>
 	<menu id="ob_menu" label="Рабочее окружение">
+		<item label="Сменить фон">
+			<action name="Execute">
+				<execute>feh --bg-fill --recursive --random /data/graph/backgrounds</execute>
+			</action>
+		</item>
 		<item label="Общие настройки">
 			<action name="Execute">
 				<execute>obconf</execute>
