@@ -80,7 +80,7 @@
 		<separator/>
 		<item label="Настройка уведомлений">
 			<action name="Execute">
-				<execute>sfce4-notifyd-config</execute>
+				<execute>xfce4-notifyd-config</execute>
 			</action>
 		</item>
 		<item label="Настройка экрана приветствия">
