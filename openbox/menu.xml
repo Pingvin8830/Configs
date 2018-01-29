@@ -119,7 +119,7 @@
 	<menu id="net_menu" label="Сетевые утилиты">
 		<item icon="/data/graph/icons/chromium.jpg" label="Браузер">
 			<action name="Execute">
-				<command>chromium.sh</command>
+				<command>/data/git/Bash/progs/chromium.sh</command>
 			</action>
 		</item>
 		<item label="Звонилка">
