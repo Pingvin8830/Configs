@@ -148,7 +148,7 @@ startup_notifications = 1
 launcher_tooltip = 1
 launcher_item_app = /usr/share/applications/tint2conf.desktop
 launcher_item_app = /usr/share/applications/Thunar.desktop
-launcher_item_app = /usr/share/applications/firefox.desktop
+launcher_item_app = /data/git/Configs/desktops/chromium.desktop
 
 #-------------------------------------
 # Clock
