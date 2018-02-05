@@ -102,7 +102,7 @@
 		</item>
 		<item label="Убивалка сообщений">
 			<action name="Execute">
-				<execute>/data/git/shells/bash/prog/reglament_kill.sh</execute>
+				<execute>/data/git/Bash/progs/reglament_kill.sh</execute>
 			</action>
 		</item>
 		<item label="Терминал">
