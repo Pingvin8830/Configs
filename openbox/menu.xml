@@ -77,6 +77,11 @@
 		<item label="Перечитать настройки">
 			<action name="Reconfigure"/>
 		</item>
+		<item label="Перезапуск панели">
+			<action name="Execute">
+				<execute>/data/git/Bash/progs/tint2restart.sh</execute>
+			</action>
+		</item>
 		<separator/>
 		<item label="Настройка уведомлений">
 			<action name="Execute">
