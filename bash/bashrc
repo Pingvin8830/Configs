@@ -7,7 +7,7 @@
 
 export EDITOR=vim
 
-[ `tty | cut -c 6-8` == 'tty' ] && setleds -D +num
+[ `tty | cut -c 6-8` == 'tty' -a `uname -n` != 'AntonNotebook' ] && setleds -D +num
 
 RED="\033[31m"
 WHITE="\033[0m"
