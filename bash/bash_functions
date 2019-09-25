@@ -30,7 +30,7 @@ gu () {
   for r in $(ls -1); do
     echo $r
     cd $r
-    git branch master
+    git checkout master
     git pull
     cd ..
     echo
