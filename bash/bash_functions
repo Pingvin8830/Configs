@@ -23,3 +23,18 @@ ua () {
 bkp () {
   scp $1 HomeServer:/backups/$2
 }
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------
+gu () {
+  NOW=$(pwd)
+  cd /git
+  for r in $(ls -1); do
+    echo $r
+    cd $r
+    git branch master
+    git pull
+    cd ..
+    echo
+    done
+  cd $NOW
+  pwd
+}
