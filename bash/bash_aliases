@@ -37,6 +37,8 @@ alias sysstart='sudo systemctl start'
 alias sysstop='sudo systemctl stop'
 alias sysen='sudo systemctl enable'
 alias sysdis='sudo systemctl disable'
+alias sysrel='sudo systemctl daemon-reload'
+alias sysfail='systemctl --failed'
 
 #-Aliases for ssh-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 alias server='ssh HomeServer'
